@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Client = () => {
-  useEffect(() => {
+useEffect(() => {
     AOS.init({
       offset: 120,
       duration: 800,
@@ -14,8 +14,7 @@ const Client = () => {
       once: true,
     });
   }, []);
-
-  const { darkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <>
@@ -58,20 +57,8 @@ const Client = () => {
                 data-aos="zoom-in-up"
                 data-aos-delay={index * 100}
                 key={index}
-                className="group bg-white/20 dark:bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="group bg-white/20 dark:bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-red-50 hover:border-px hover:border-red-400"
               >
-                {/* Stars */}
-                <div className="flex text-yellow-400  gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <FaStar key={i} />
-                  ))}
-                </div>
-
-                {/* Review */}
-                <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-                  {item.text}
-                </p>
-
                 {/* User */}
                 <div className="flex items-center gap-4 mt-2">
                   <img
@@ -81,15 +68,27 @@ const Client = () => {
                   />
 
                   <div>
-                    <h3 className="text-black dark:text-white font-semibold">
+                    <h3 className="text-black dark:text-white text-lg font-semibold">
                       {item.name}
                     </h3>
+                    <p className="text-gray-700 dark:text-gray-300 text-md leading-relaxed">
+                      {item.text}
+                    </p>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                       {item.role}
                     </p>
                   </div>
                 </div>
-                <p>{item.feedback}</p>
+                <p className="text-md text-justify text-slate-600 dark:text-white">
+                  {item.feedback}
+                </p>
+                <div className="flex justify-start items-start gap-2 w-full ">
+                  <FaStar className="size-5 text-yellow-400" />
+                  <FaStar className="size-5 text-yellow-400" />
+                  <FaStar className="size-5 text-yellow-400" />
+                  <FaStar className="size-5 text-yellow-400" />
+                  <FaStar className="size-5 text-yellow-400" />
+                </div>
               </div>
             ))}
           </div>
