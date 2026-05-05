@@ -126,13 +126,13 @@ const Properties = () => {
 
                   <div className="flex gap-3">
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaShareAlt className="text-red-400"/>
+                      <FaShareAlt className="text-red-400" />
                     </button>
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaHeart className="text-red-400"/>
+                      <FaHeart className="text-red-400" />
                     </button>
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaPlus className="text-red-400"/>
+                      <FaPlus className="text-red-400" />
                     </button>
                   </div>
                 </div>

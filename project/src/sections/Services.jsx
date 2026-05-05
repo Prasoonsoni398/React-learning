@@ -29,7 +29,6 @@ const Services = () => {
             darkMode ? "bg-gray-900" : "bg-red-50"
           } lg:w-[90%] w-full m-auto rounded-2xl flex flex-col justify-center items-start lg:px-20 px-6 py-20 gap-14 transition-all duration-500`}
         >
-
           <div className="flex flex-col gap-4">
             <h2
               data-aos="fade-up"
@@ -56,9 +55,8 @@ const Services = () => {
                 data-aos="zoom-in-up"
                 data-aos-delay={index * 100}
                 key={index}
-                className="group bg-white dark:bg-gray-800 px-8 py-10 min-h-[300px] flex flex-col justify-start items-start rounded-2xl border border-transparent hover:border-red-500 shadow-sm hover:shadow-xl cursor-pointer gap-5 transition-all duration-300 hover:-translate-y-2"
+                className="group bg-white dark:bg-gray-800 px-8 py-10 min-h-75 flex flex-col justify-start items-start rounded-2xl border border-transparent hover:border-red-500 shadow-sm hover:shadow-xl cursor-pointer gap-5 transition-all duration-300 hover:-translate-y-2"
               >
-
                 <div className="p-5 rounded-full bg-red-100 dark:bg-gray-700 group-hover:bg-red-500 transition-all duration-300">
                   <item.icon className="text-red-600 dark:text-white size-8 group-hover:text-white transition-all duration-300 group-hover:scale-110" />
                 </div>

@@ -50,10 +50,10 @@ const PopularAreas = () => {
                   data-aos="zoom-in"
                   data-aos-delay={400}
                   style={{ backgroundImage: `url(${img})` }}
-                  className="h-[300px] w-full bg-cover bg-center rounded-xl relative overflow-hidden group cursor-pointer transition-transform duration-500 hover:scale-105 shadow-md hover:shadow-xl"
+                  className="h-75 w-full bg-cover bg-center rounded-xl relative overflow-hidden group cursor-pointer transition-transform duration-500 hover:scale-105 shadow-md hover:shadow-xl"
                 >
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                   {/* Text on image */}
                   <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-500">

@@ -51,6 +51,8 @@ const Navbar = () => {
               >
                 Login
               </Link>
+                Login
+              </Link>
               <Link
                 to="/register"
                 className="bg-white px-3 py-1 rounded-sm text-(--color-primary) hover:outline hover:bg-transparent hover:text-white text-md"

@@ -8,7 +8,7 @@ import Properties from "./sections/Properties";
 import Services from "./sections/Services";
 import Contact from "./sections/Contact";
 import Footer from "./Components/Footer";
-import Client from "./sections/client"; 
+import Client from "./sections/Client";
 
 const App = () => {
   return (
