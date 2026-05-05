@@ -7,10 +7,10 @@ import "aos/dist/aos.css";
 const hero = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 120,
       duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -71,7 +71,7 @@ const hero = () => {
                 </select>
             </div>
             <div className="w-full">
-                <button type="submit" className="bg-red-600 dark:bg-red-700 hover:bg-red-700 dark:hover:bg-red-300 dark:hover:text-black text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300 flex-1">SUBMIT</button>
+                <button type="submit" className="bg-red-600 dark:bg-red-700 hover:bg-red-700 dark:hover:bg-red-300 dark:hover:text-black text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-500 flex-1">SUBMIT</button>
             </div>
         </div>
       </div>

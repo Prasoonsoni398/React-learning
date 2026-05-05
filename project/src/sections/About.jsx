@@ -7,10 +7,10 @@ import "aos/dist/aos.css";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 120,
       duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
   const { darkMode, toggleDarkMode } = useDarkMode();

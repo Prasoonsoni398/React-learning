@@ -9,10 +9,10 @@ import "aos/dist/aos.css";
 const PopularAreas = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 120,
       duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -50,13 +50,13 @@ const PopularAreas = () => {
                   data-aos="zoom-in"
                   data-aos-delay={400}
                   style={{ backgroundImage: `url(${img})` }}
-                  className="h-[300px] w-full bg-cover bg-center rounded-xl relative overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-105 shadow-md hover:shadow-xl"
+                  className="h-[300px] w-full bg-cover bg-center rounded-xl relative overflow-hidden group cursor-pointer transition-transform duration-500 hover:scale-105 shadow-md hover:shadow-xl"
                 >
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
                   {/* Text on image */}
-                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-300">
+                  <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition duration-500">
                     <h2 className="text-xl font-semibold">Location {i + 1}</h2>
                     <p className="text-sm">Explore properties</p>
                   </div>
@@ -78,7 +78,7 @@ const PopularAreas = () => {
         bg-white dark:bg-gray-900 
         rounded-2xl p-6 
         shadow-md hover:shadow-xl 
-        transition-all duration-300 
+        transition-all duration-500 
         hover:-translate-y-2
       "
               >

@@ -19,15 +19,13 @@ import "aos/dist/aos.css";
 const Properties = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200,
+      offset: 120,
       duration: 800,
       easing: "ease-in-out",
-      delay: 100,
       once: true,
     });
   }, []);
-
-  const { darkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <div className={darkMode ? "bg-black" : "bg-transparent"}>
@@ -128,13 +126,13 @@ const Properties = () => {
 
                   <div className="flex gap-3">
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaShareAlt />
+                      <FaShareAlt className="text-red-400"/>
                     </button>
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaHeart />
+                      <FaHeart className="text-red-400"/>
                     </button>
                     <button className="p-2 border rounded-lg hover:bg-black hover:text-white transition hover:scale-110">
-                      <FaPlus />
+                      <FaPlus className="text-red-400"/>
                     </button>
                   </div>
                 </div>
