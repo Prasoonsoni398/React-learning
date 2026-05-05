@@ -12,52 +12,94 @@ const Contact = () => {
       once: true,
     });
   }, []);
+
   const { darkMode, toggleDarkMode } = useDarkMode();
+
   return (
     <>
       <div
         className={`${
           darkMode
-            ? "bg-linear-to-br from-black via-gray-900 to-gray-800"
-            : "bg-linear-to-br from-red-100 via-white to-red-50"
+            ? "bg-gradient-to-br from-black via-gray-900 to-gray-800"
+            : "bg-gradient-to-br from-red-100 via-white to-red-50"
         } py-20 transition-all duration-500`}
       >
         <section
           id="contact"
-          className={`${darkMode ? "dark bg-gray-800" : "light bg-red-100"} lg:w-[95%] w-full h-fit m-auto rounded-xl grid lg:grid-cols-2 grid-cols-1 justify-center items-center lg:px-36 py-20 gap-10`}
+          className={`${
+            darkMode ? "bg-gray-900" : "bg-red-100"
+          } lg:w-[90%] w-full m-auto rounded-2xl grid lg:grid-cols-2 grid-cols-1 items-center lg:px-20 px-6 py-20 gap-12`}
         >
-          <div
+          {/* Form */}
+          <form
             data-aos="fade-up"
-            className="bg-white dark:bg-black p-10 flex flex-col justify-center items-start gap-4 rounded-xl"
+            className="bg-white/80 dark:bg-black/60 backdrop-blur-lg p-10 flex flex-col gap-4 rounded-2xl shadow-lg"
           >
-            <h1 className="text-2xl text-black font-semibold dark:text-white">
+            <h2 className="text-2xl font-semibold text-black dark:text-white">
               Send us a message today
-            </h1>
+            </h2>
+
             <input
               type="text"
-              placeholder="Enter your full name "
-              className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 outline-none"
+              placeholder="Full Name"
+              className="w-full px-5 py-3 border border-gray-300 rounded-lg focus:border-red-400 outline-none"
             />
+
             <input
               type="email"
-              placeholder="Enter your Email"
-              className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 outline-none"
+              placeholder="Email Address"
+              className="w-full px-5 py-3 border border-gray-300 rounded-lg focus:border-red-400 outline-none"
             />
+
             <input
               type="tel"
-              placeholder="Enter mobile number"
+              placeholder="Mobile Number"
               pattern="[0-9]{10}"
               maxLength="10"
-              className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 outline-none"
+              className="w-full px-5 py-3 border border-gray-300 rounded-lg focus:border-red-400 outline-none"
             />
+
             <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              placeholder="Enter your message here...."
-              className="w-full px-6 py-3 border-2 border-gray-200 rounded-xl focus:border-red-400 outline-none"
+              rows="4"
+              placeholder="Your Message..."
+              className="w-full px-5 py-3 border border-gray-300 rounded-lg focus:border-red-400 outline-none"
             ></textarea>
+
+            <button className="bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-black dark:hover:bg-red-700 transition-all duration-300">
+              SEND MESSAGE
+            </button>
+          </form>
+
+          {/* Content */}
+          <div className="flex flex-col gap-6 lg:p-10">
+            <h3
+              data-aos="zoom-in"
+              className="text-red-500 dark:text-red-400 font-semibold tracking-widest"
+            >
+              REACH US
+            </h3>
+
+            <h1
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              className="text-black dark:text-white text-3xl font-bold leading-snug"
+            >
+              We’re here to help you find your dream property.
+            </h1>
+
+            <p
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              className="text-gray-600 dark:text-gray-300"
+            >
+              Contact us anytime and our team will get back to you quickly with
+              the best solutions tailored for you.
+            </p>
+
+            <button data-aos="zoom-in"
+              className="bg-red-600 text-white px-6 py-3 w-fit rounded-lg font-semibold hover:bg-black dark:hover:bg-red-700 transition-all duration-300">
+              CONTACT NOW
+            </button>
           </div>
         </section>
       </div>

@@ -39,7 +39,7 @@ const Properties = () => {
             data-aos="zoom-in"
             className="lg:text-5xl text:3xl font-semibold dark:text-white"
           >
-            Explore the <span className="text-red-500">latest</span>
+            Explore the latest
           </h1>
         </div>
 

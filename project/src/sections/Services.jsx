@@ -42,7 +42,7 @@ const Services = () => {
               data-aos-delay="100"
               className="text-black dark:text-white text-3xl md:text-4xl font-bold leading-tight"
             >
-              Top <span className="text-red-500">real</span> estate <br /> <span className="text-red-500">services</span>  available
+              Top real estate <br /> services available
             </h1>
           </div>
 

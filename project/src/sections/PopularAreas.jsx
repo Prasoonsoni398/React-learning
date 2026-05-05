@@ -30,10 +30,7 @@ const PopularAreas = () => {
               <h1 className="text-red-500 tracking-wide">POPULAR AREAS</h1>
 
               <h1 className="mt-4 text-[42px] font-bold leading-tight">
-                Explore most{" "}
-                <span className="text-red-500 relative">
-                  popular areas
-                </span>{" "}
+                Explore most <br /> popular areas
               </h1>
 
               <p className="mt-4 text-gray-600 dark:text-gray-300">
