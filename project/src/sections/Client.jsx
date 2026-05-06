@@ -57,7 +57,7 @@ useEffect(() => {
                 data-aos="zoom-in-up"
                 data-aos-delay={index * 100}
                 key={index}
-                className="group bg-white/20 dark:bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-red-50 hover:border-px hover:border-red-400"
+                className="group bg-white/20 dark:bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-8 flex flex-col gap-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-red-50 dark:hover:bg-gray-500 hover:border-px hover:border-red-400"
               >
                 {/* User */}
                 <div className="flex items-center gap-4 mt-2">

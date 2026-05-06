@@ -27,7 +27,7 @@ const hero = () => {
             data-aos="zoom-in"
             className="md:text-6xl text-4xl text-white font-semibold lg:pr-150 pr-0 md:leading-17.5 leading-10 mb-5"
           >
-            Find your next Home in Los Angeles
+            Find your next Home in Las Vegas
           </h1>
           <p
             data-aos="zoom-in"
@@ -42,12 +42,12 @@ const hero = () => {
 
       {/* form starts from here */}
       <div
-        className={`${darkMode ? "dark bg-black" : "light bg-transparent"}' z-10`}
+        className={`${darkMode ? "dark bg-black" : "light bg-transparent"} z-10 pt-5`}
       >
         <div
           data-aos="zoom-in"
           id="form"
-          className={`${darkMode ? "dark bg-gray-800" : "light bg-transparent"}' lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 place-items-center items-center gap-6 p-8 rounded-xl `}
+          className={`${darkMode ? "dark bg-gray-800" : "light bg-transparent"} lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 place-items-center items-center gap-6 p-8 rounded-xl `}
         >
           <div className="w-full">
             <h1 className="text-black font-semibold dark:text-white">
@@ -56,7 +56,7 @@ const hero = () => {
             <input
               type="text"
               placeholder="Enter an address, state, city or pincode"
-              className="bg-white p-2 w-full mt-2 border-b border-[#c9c7c1] outline-none focus:border-amber-400"
+              className="bg-white p-2 w-full mt-2 border-b border-[#c9c7c1] outline-none focus:border-amber-400 rounded-md"
             />
           </div>
           <div className="w-full">
@@ -64,7 +64,7 @@ const hero = () => {
             <select
               name="selectOption"
               id="selectOption"
-              className="bg-white p-2 border-b w-full border-[#c9c7c1] outline-none text-gray-500 text-md mt-2"
+              className="bg-white p-2 border-b w-full border-[#c9c7c1] outline-none text-gray-500 text-md mt-2 rounded-md pr-10 "
             >
               <option value="" disabled >
                 Select Property
@@ -81,7 +81,7 @@ const hero = () => {
             <select
               name="selectOption"
               id="selectOption"
-              className="bg-white p-2 border-b w-full border-[#c9c7c1] outline-none  text-gray-500 text-md mt-2"
+              className="bg-white p-2 border-b w-full border-[#c9c7c1] outline-none  text-gray-500 text-md mt-2 rounded-md"
             >
               <option value="" disabled >
                 Property Category{" "}

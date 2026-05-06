@@ -37,7 +37,7 @@ const Properties = () => {
           </h1>
           <h1
             data-aos="zoom-in"
-            className="lg:text-5xl text:3xl font-semibold dark:text-white"
+            className="lg:text-5xl font-semibold dark:text-white"
           >
             Explore the latest
           </h1>

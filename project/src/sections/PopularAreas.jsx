@@ -27,7 +27,7 @@ const PopularAreas = () => {
           <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-10">
             {/* Left */}
             <div>
-              <h1 className="text-red-500 tracking-wide">POPULAR AREAS</h1>
+              <h1 className="text-red-500 tracking-wide dark:text-red-600">POPULAR AREAS</h1>
 
               <h1 className="mt-4 text-[42px] font-bold leading-tight">
                 Explore most <br /> popular areas
@@ -72,7 +72,7 @@ const PopularAreas = () => {
                 data-aos-delay={200 + i * 100}
                 className="
         flex items-center gap-6 w-full 
-        bg-white dark:bg-gray-900 
+        bg-white dark:bg-gray-400 
         rounded-2xl p-6 
         shadow-md hover:shadow-xl 
         transition-all duration-500 
@@ -80,12 +80,12 @@ const PopularAreas = () => {
       "
               >
                 {/* Number */}
-                <h1 className="text-4xl md:text-6xl font-bold text-red-500">
+                <h1 className="text-4xl md:text-6xl font-bold text-red-500 dark:text-red-700">
                   5K
                 </h1>
 
                 {/* Text */}
-                <h1 className="text-lg font-semibold text-gray-700 dark:text-gray-300 leading-tight">
+                <h1 className="text-lg font-semibold text-gray-700 dark:text-gray-800 leading-tight">
                   ACTIVE <br /> LISTINGS
                 </h1>
               </div>
