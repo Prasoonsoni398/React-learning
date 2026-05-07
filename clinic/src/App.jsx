@@ -7,6 +7,9 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Doctors from "./pages/Doctors"
+import Departments from "./pages/Departments"
+import Services from "./pages/Services"
+import Contact from "./pages/Contact"
 
 function App() {
   return (
@@ -22,7 +25,14 @@ function App() {
 
         <Route path="/about" element={<About />} />
 
+        <Route path="/departments" element={<Departments />} />
+
+        <Route path="/services" element={<Services />} />
+
         <Route path="/doctors" element={<Doctors />} />
+
+        <Route path="/Contact" element={<Contact />} />
+
 
       </Routes>
       <Footer/>

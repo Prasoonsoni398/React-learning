@@ -33,7 +33,7 @@ const Accreditations = () => {
     <section className="w-full bg-white py-24">
 
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto lg:px-4 px-8 ">
 
         {/* Main Box */}
         <div className="bg-[#f7f9fc9c] rounded-[2rem] px-6 sm:px-10 lg:px-20 py-20">

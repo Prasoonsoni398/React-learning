@@ -4,7 +4,7 @@ import { PiHeartbeatLight } from "react-icons/pi";
 const AboutUs = () => {
   return (
  <section className="bg-white py-15 overflow-hidden">
-  <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:px-4 px-8 grid-cols-1 gap-24 items-center">
+  <div className=" mx-auto grid md:grid-cols-2 max-w-7xl lg:px-4 px-8 grid-cols-1 gap-24 items-center">
     
     {/* Left Content */}
     <div>

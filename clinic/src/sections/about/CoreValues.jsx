@@ -40,7 +40,7 @@ const CoreValues = () => {
     <section className="w-full bg-white py-24">
 
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto lg:px-4 px-8">
 
         {/* Heading */}
         <div className="text-center">

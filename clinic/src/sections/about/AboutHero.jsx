@@ -24,7 +24,7 @@ const AboutHero = () => {
   return (
     <section className="w-full bg-white py-20 overflow-hidden mt-30">
       {/* Container */}
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto lg:px-4 px-8">
         {/* Grid */}
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
