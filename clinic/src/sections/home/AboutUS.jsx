@@ -4,7 +4,7 @@ import { PiHeartbeatLight } from "react-icons/pi";
 const AboutUs = () => {
   return (
  <section className="bg-white py-15 overflow-hidden">
-  <div className="max-w-7xl mx-auto grid grid-cols-2 gap-24 items-center">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:px-4 px-8 grid-cols-1 gap-24 items-center">
     
     {/* Left Content */}
     <div>
@@ -68,7 +68,7 @@ const AboutUs = () => {
     </div>
 
     {/* Right Side */}
-    <div className="relative flex justify-end">
+    <div className="relative flex justify-end me-2">
       
       {/* Main Image */}
       <img
@@ -89,7 +89,7 @@ const AboutUs = () => {
       </div>
 
       {/* Bottom Card */}
-      <div className="absolute bottom-[-6%] left-[-4%] bg-white rounded-lg px-5 py-4 flex items-center gap-5 max-w-[350px] shadow-2xl">
+      <div className="absolute bottom-[-6%] left-[-4%] bg-white rounded-lg px-5 py-4 flex items-center gap-5 max-w-[350px] shadow-2xl ">
         
         {/* Icon */}
         <div className="w-15 h-13 rounded-full bg-[#EEF4FF] flex justify-center items-center">

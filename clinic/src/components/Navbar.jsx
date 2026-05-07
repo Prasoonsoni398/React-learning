@@ -146,11 +146,11 @@ const Navbar = () => {
     <nav
       className={`w-full fixed z-50 transition-all duration-500 ${
         scrolled
-          ? "top-0 bg-white shadow-lg py-4"
+          ? "top-0 bg-white shadow-md py-4"
           : "top-10 bg-[rgba(255,255,255,0.7)] py-5 "
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center  px-15 lg:p-0">
+      <div className="max-w-7xl mx-auto flex justify-between items-center lg:px-4 px-8 lg:p-0">
         {/* Logo */}
         <NavLink to="/">
           <h1 className="2xl:text-3xl xl:text-2xl lg:text-xl text-lg text-black leading-none font-semibold">

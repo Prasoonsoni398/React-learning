@@ -2,6 +2,7 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopHeader from "./components/TopHeader";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -24,6 +25,7 @@ function App() {
         <Route path="/doctors" element={<Doctors />} />
 
       </Routes>
+      <Footer/>
 
     </BrowserRouter>
   );

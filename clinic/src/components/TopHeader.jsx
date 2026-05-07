@@ -14,7 +14,7 @@ const TopHeader = () => {
   return (
     <div className="w-full bg-[#175CDD] text-white h-10  block fixed top-0 z-10">
 
-      <div className="max-w-7xl mx-auto h-full flex sm:justify-between justify-center items-center">
+      <div className="max-w-7xl mx-auto h-full flex sm:justify-between justify-center items-center lg:px-4 px-8">
 
         {/* Left */}
         <div className="flex items-center  xl:gap-8 gap-6 text-[14px]">

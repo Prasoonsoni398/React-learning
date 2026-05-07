@@ -10,7 +10,7 @@ import {
 
 import { FaRegCalendarCheck } from "react-icons/fa6";
 
-import doctorimg from "../assets/images/doctorimg.png";
+import doctorimg from "../../assets/images/doctorimg.png";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-30 right-[39%] w-52 h-52 bg-[#dce7ff] rounded-full opacity-60"
+        className="absolute top-30 right-[40%] w-52 h-52 bg-[#dce7ff] rounded-full opacity-60"
       />
 
       <motion.div
@@ -46,11 +46,11 @@ const Hero = () => {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-25 right-[12%] w-52 h-52 bg-[#dce7ff] rounded-full opacity-60"
+        className="absolute bottom-25 right-[14%] w-52 h-52 bg-[#dce7ff] rounded-full opacity-60"
       />
 
       {/* Main Container */}
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center place-items-center lg:place-items-start">
+      <div className="max-w-7xl lg:px-4 px-8 mx-auto grid lg:grid-cols-2 gap-12 items-center place-items-center lg:place-items-start">
         {/* Left Section */}
         <div className="relative z-10 ">
           {/* Top Tags */}
@@ -148,7 +148,7 @@ const Hero = () => {
         </div>
 
         {/* Right Section */}
-        <div className="relative flex justify-center lg:justify-end ps-10">
+        <div className="relative flex justify-center lg:justify-end ">
           {/* Image Wrapper */}
           <div className="relative w-full pt-15">
             {/* Main Image */}
