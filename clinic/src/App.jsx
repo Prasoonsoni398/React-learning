@@ -8,6 +8,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Doctors from "./pages/Doctors"
 import Departments from "./pages/Departments"
+import DepartmentalDetails from "./pages/DepartmentalDetails"
 import Services from "./pages/Services"
 import Contact from "./pages/Contact"
 
@@ -32,6 +33,8 @@ function App() {
         <Route path="/doctors" element={<Doctors />} />
 
         <Route path="/Contact" element={<Contact />} />
+
+        <Route path="/department-details" element={<DepartmentalDetails />} />
 
 
       </Routes>
